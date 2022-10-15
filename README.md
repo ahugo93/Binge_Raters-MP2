@@ -33,5 +33,6 @@ The page will reload when you make changes.\
 - [@ahugo93](https://www.github.com/ahugo93)
 - [@maxxlarss](https://www.github.com/maxxlarss)
 - [@appplus](https://www.github.com/appplus)
+- [@palmer2539](https://www.github.com/palmer2539)
 
 
