@@ -1,55 +1,157 @@
-*{
-  margin: 0;
-  padding:0;
-  box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: 'montserrat', sans-serif;
-  background-color:#030328;
+	font-family: 'Gilroy', sans-serif;
+	background: linear-gradient(to right, #c2481b, #611dd6)
 }
 
 header {
-padding: 50px 15px 0px;
+	padding: 50px 15px 0px;
 }
 
 header h1 {
-  color: aliceblue;
-  font-family: Gilroy Bold;
-  font-size: 48px;
-  line-height: 1.6;
-  font-weight: 500;
-  text-align:"left";
+	color: #FFF;
+	font-size: 48px;
+	font-weight: 500;
+	text-align: left;
 }
 
 main {
-  width: 100px;
-  max-width: 960px;
-  margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 section {
-  padding: 15px;
+	padding: 15px;
 }
 
 .searchbox {
-  text-align: center;
-  display: block;
-  width: 500px;
-  padding: 20px;
-  border: none;
-  outline: none;
-  background: none;
-  background-color: #eee;
-  border-radius: 20px;
-  color: #030328;
-  font-size: 20px;
+	display: block;
   position: relative;
-  font-weight: 400px;
-  left: 400px;
+  left: 800px;
   bottom: 70px;
+	width: 50%;
+	padding: 20px;
+  border: none;
+	background: none;
+  text-align: center;
+	background-color: #EEE;
+	border-radius: 20px;
+  font-size: 20px;
+	font-weight: 300;
+	transition: 0.4s ease-out;
 }
 
 .searchbox:focus {
-box-shadow: 0px 0px 8px 3px #030328;
+	box-shadow: 0px 0px 8px 3px;
+}
+
+.results {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -15px;
+}
+
+.results .result {
+	width: 33.333%;
+	min-width: 250px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.results .result img {
+	display: block;
+	width: 100%;
+}
+
+.results .result h3 {
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 10px;
+	background: #4c0653;
+	flex: 1 1 100%;
+	transition: 0.4s ease-out;
+}
+
+.results .result:hover h3 {
+	background: #FFF;
+	color: #a31da3;
+}
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #7d258c;
+
+	overflow-y: scroll;
+}
+
+.popup .content {
+	display: block;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 25px;
+
+	color: #FFF;
+}
+
+.popup .content h2 {
+	font-size: 28px;
+	font-weight: 600;
+}
+.popup .content h2 span {
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.popup .content .rating {
+	margin-bottom: 30px;
+}
+
+.popup .content .plot {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -15px 30px;
+}
+
+.popup .content .plot img {
+	flex: 1 1 50%;
+	max-width: 300px;
+	padding: 0px 15px;
+}
+
+.popup .content .plot p {
+	flex: 1 1 50%;
+	padding: 15px;
+}
+
+.popup .content .close {
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 18px;
+	font-weight: 700;
+	color: rgb(165, 36, 172);
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	appearance: none;
+	cursor: pointer;
+
+	transition: 0.4s ease-out;
+}
+
+.popup .content .close:hover {
+	background: #a11ba4;
 }

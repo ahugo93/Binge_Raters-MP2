@@ -1,8 +1,6 @@
+import React from 'react';
 
-
-import React from 'react'
-
-import Result from './Result'
+import Result from './Result';
 
 function Results ({ results, openPopup }) {
 	return (
