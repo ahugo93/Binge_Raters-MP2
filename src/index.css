@@ -148,10 +148,18 @@ section {
 	outline: none;
 	appearance: none;
 	cursor: pointer;
-
+	position: absolute;
+	top: 600px;
 	transition: 0.4s ease-out;
+	right: 200px;
 }
 
 .popup .content .close:hover {
 	background: #a11ba4;
+
+}
+
+.popup .half-rating {
+	position: absolute;
+	right: 100px;
 }
