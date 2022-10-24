@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Gilroy', sans-serif;
-	background: linear-gradient(to right, #c2481b, #611dd6)
+	background: linear-gradient(to left, #8307a9, #33097c)
 }
 
 header {
@@ -58,12 +58,13 @@ section {
 }
 
 .results .result {
-	width: 33.333%;
-	min-width: 250px;
-	padding: 15px;
+	width: 30%;
+	min-width: 200px;
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	cursor: pointer;
+	text-align: center;
 }
 
 .results .result img {
@@ -74,11 +75,10 @@ section {
 .results .result h3 {
 	color: #FFF;
 	font-size: 20px;
-	font-weight: 600;
-	padding: 10px;
+	font-weight: 700;
+	padding: 8px;
 	background: #4c0653;
-	flex: 1 1 100%;
-	transition: 0.4s ease-out;
+	flex: 50%;
 }
 
 .results .result:hover h3 {

@@ -1,6 +1,5 @@
-import React from 'react';
-
-import Result from './Result';
+import React from 'react'
+import Result from './Result'
 
 function Results ({ results, openPopup }) {
 	return (
@@ -11,5 +10,6 @@ function Results ({ results, openPopup }) {
 		</section>
 	)
 }
+
 
 export default Results

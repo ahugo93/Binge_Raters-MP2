@@ -1,8 +1,8 @@
-import Search from './components/Search';
-import Results from './components/Results';
-import Popup from './components/Popup';
-import React, { useState } from 'react';
-import axios from 'axios';
+import Search from './components/Search'
+import Results from './components/Results'
+import Popup from './components/Popup'
+import React, { useState } from 'react'
+import axios from 'axios'
 
 function App() {
   const [state, setState] = useState({
@@ -10,8 +10,9 @@ function App() {
     results: [],
     selected: {}
   });
-  const apiurl = "http://www.omdbapi.com/?i=tt3896198&apikey=5d09019e";
+  const apiurl = "http://www.omdbapi.com/?apikey=5d09019e";
 
+ 
   const search = (e) => {
     if (e.key === "Enter") {
       axios(apiurl + "&s=" + state.s).then(({ data }) => {
@@ -50,11 +51,19 @@ function App() {
     });
   }
 
+
+  const App = () => {
+    return (
+      <div className="App">
+      </div>
+    );
+  };
+
   return (
     <div className="App">
       <header>
         <h1>Binge Raters</h1>
-      </header>
+        </header>
       <main>
         <Search handleInput={handleInput} search={search} />
 
