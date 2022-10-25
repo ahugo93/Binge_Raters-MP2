@@ -67,10 +67,11 @@ function App() {
         </header>
       <main>
         <Search handleInput={handleInput} search={search} />
-        <StandardImageList/>
+       
         <Results results={state.results} openPopup={openPopup} />
-
-        {(typeof state.selected.Title != "undefined") ? <Popup selected={state.selected} closePopup={closePopup} /> : false}
+        
+       {(typeof state.selected.Title != "undefined") ? <Popup selected={state.selected} closePopup={closePopup} /> : false}
+        <StandardImageList/>
       </main>
     </div>
   );
