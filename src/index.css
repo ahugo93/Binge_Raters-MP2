@@ -31,20 +31,20 @@ section {
 }
 
 .searchbox {
-	display: block;
+  display: block;
   position: relative;
   left: 800px;
   bottom: 70px;
-	width: 50%;
-	padding: 20px;
+  width: 50%;
+  padding: 20px;
   border: none;
-	background: none;
+  background: none;
   text-align: center;
-	background-color: #EEE;
-	border-radius: 20px;
+  background-color: #EEE;
+  border-radius: 20px;
   font-size: 20px;
-	font-weight: 300;
-	transition: 0.4s ease-out;
+  font-weight: 300;
+  transition: 0.4s ease-out;
 }
 
 .searchbox:focus {
@@ -150,8 +150,9 @@ section {
 	cursor: pointer;
 	position: absolute;
 	top: 600px;
-	transition: 0.4s ease-out;
 	right: 200px;
+	transition: 0.4s ease-out;
+
 }
 
 .popup .content .close:hover {
@@ -159,7 +160,7 @@ section {
 
 }
 
-.popup .half-rating {
-	position: absolute;
-	right: 100px;
+.popup .content .half-rating {
+	position: relative;
+	right: 400px;
 }
