@@ -3,6 +3,7 @@ import Results from './components/Results'
 import Popup from './components/Popup'
 import React, { useState } from 'react'
 import axios from 'axios'
+import StandardImageList from './components/MainImages'
 
 function App() {
   const [state, setState] = useState({
@@ -66,7 +67,7 @@ function App() {
         </header>
       <main>
         <Search handleInput={handleInput} search={search} />
-
+        <StandardImageList/>
         <Results results={state.results} openPopup={openPopup} />
 
         {(typeof state.selected.Title != "undefined") ? <Popup selected={state.selected} closePopup={closePopup} /> : false}
