@@ -61,8 +61,8 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h1>Binge Raters</h1>
+      <header className='mainName'>
+        <h1>🎥 Binge Raters 🎬</h1>
         </header>
       <main>
         <Search handleInput={handleInput} search={search} />
