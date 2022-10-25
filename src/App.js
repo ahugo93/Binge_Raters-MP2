@@ -53,7 +53,7 @@ function App() {
   }
 
 
-  const App = () => {
+const App = () => {
     return (
       <div className="App">
       </div>
@@ -62,14 +62,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className='mainName'>
+      <header>
         <h1>🎥 Binge Raters 🎬</h1>
         </header>
       <main>
-        <Search handleInput={handleInput} search={search} />
-       
+        <Search handleInput={handleInput} search={search} />      
         <Results results={state.results} openPopup={openPopup} />
-        
        {(typeof state.selected.Title != "undefined") ? <Popup selected={state.selected} closePopup={closePopup} /> : false}
         <StandardImageList/>
       </main>
