@@ -4,7 +4,6 @@ import Stack from '@mui/material/Stack';
 import CommentBox from './CommentSection';
 
 
-
 function Popup({ selected, closePopup }) {
 	return (
 		

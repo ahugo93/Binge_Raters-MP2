@@ -176,9 +176,8 @@ section {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
 	align-items: center;
-	margin-top: -200px;
+	margin-top: 20px;
 }
 
 .comment-flexbox{
@@ -202,8 +201,8 @@ section {
 .comment-button{
 	height: 40px;
 	width: 80px;
-	background-color: blue;
-	color: white;
+	background-color: white;
+	color: #a31da3;;
 	font-size: 1.05rem;
 	margin-top: 10px;
 	border-radius: 5px;
