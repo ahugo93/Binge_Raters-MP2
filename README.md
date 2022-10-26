@@ -1,16 +1,15 @@
 # Binge Raters Application
 
-A full stack application for users to explore, add, and review their favorite TV Shows. 
-With this application users would be able to rate their favorite shows for others to see and find new binge worthy shows.
+A full stack application for users to explore and review their favorite TV Shows and Movies. 
+With this application users would be able to rate their favorite shows and movies for others to see and find new binge worthy shows.
 
 
 
 ## Features
 
-- Create new TV Show options
-- Remove TV Shows you feel are no longer binge worthy
-- Update existing show ratings or information
-- Rate your favorite shows based on its binge worthy-ness
+- Explore thousands of shows and movies from different streaming platforms
+- Rate your favorite shows and movies based on its binge worthy-ness
+- Comment your thoughts on movies and shows you've seen and loved or hated
  
 
 
