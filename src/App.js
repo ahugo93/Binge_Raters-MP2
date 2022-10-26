@@ -4,6 +4,7 @@ import Popup from './components/Popup'
 import React, { useState } from 'react'
 import axios from 'axios'
 import StandardImageList from './components/MainImages'
+import Navbar from './components/NavBar/NavBar'
 
 function App() {
   const [state, setState] = useState({
@@ -53,7 +54,7 @@ function App() {
   }
 
 
-const App = () => {
+const HomePage = () => {
     return (
       <div className="App">
       </div>
@@ -62,9 +63,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <header>
-        <h1>🎥 Binge Raters 🎬</h1>
-        </header>
+      <Navbar/>
       <main>
         <Search handleInput={handleInput} search={search} />      
         <Results results={state.results} openPopup={openPopup} />
