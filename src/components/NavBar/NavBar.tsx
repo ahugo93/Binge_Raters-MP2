@@ -32,7 +32,7 @@ class Navbar extends Component{
                        
                    
                 </ul>
-                <Button/>
+                <Button children={undefined} type={undefined} onClick={undefined} buttonStyle={undefined} buttonSize={undefined}/>
             </nav>
         )
     }

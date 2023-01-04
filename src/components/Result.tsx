@@ -10,3 +10,4 @@ function Result({ result, openPopup }) {
 }
 
 export default Result
+

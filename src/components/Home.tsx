@@ -1,12 +1,12 @@
-import Search from './components/Search'
-import Results from './components/Results'
-import Popup from './components/Popup'
+import Search from './Search'
+import Results from './Results'
+import Popup from './Popup'
 import React, { useState } from 'react'
 import axios from 'axios'
-import StandardImageList from './components/MainImages'
-import Navbar from './components/NavBar/NavBar'
+import StandardImageList from './MainImages'
+import Navbar from './NavBar/NavBar'
 
-function App() {
+function Home() {
   const [state, setState] = useState({
     s: "",
     results: [],
@@ -74,4 +74,4 @@ const HomePage = () => {
   );
 }
 
-export default App
+export default Home;
